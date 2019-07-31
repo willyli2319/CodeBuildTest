@@ -19,4 +19,8 @@ public class TestMessageUtil {
     message = "Hi!" + "Robert";
     assertEquals(message,messageUtil.salutationMessage());
   }
+  
+  @Test
+  public void testFail() {
+    assertEquals("a", "b");
 }
