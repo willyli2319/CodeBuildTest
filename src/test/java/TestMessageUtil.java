@@ -23,4 +23,5 @@ public class TestMessageUtil {
   @Test
   public void testFail() {
     assertEquals("a", "b");
+  }
 }
