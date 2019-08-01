@@ -20,8 +20,8 @@ public class TestMessageUtil {
     assertEquals(message,messageUtil.salutationMessage());
   }
   
-  @Test
-  public void testFail() {
-    assertEquals("a", "b");
-  }
+//   @Test
+//   public void testFail() {
+//     assertEquals("a", "b");
+//   }
 }
