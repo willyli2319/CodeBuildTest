@@ -4,9 +4,6 @@ phases:
   install:
     runtime-versions:
       java: openjdk11
-  pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - echo Build \#$CODEBUILD_BUILD_NUMBER starting
