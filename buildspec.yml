@@ -9,13 +9,9 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
+      - echo Build \#$CODEBUILD_BUILD_NUMBER starting
       - mvn install
-  post_build:
-    commands:
-      - echo Build completed on `date`
-      - ls
-      - ls target
 artifacts:
   files:
     - '**/*'
+  name: release_1.0.$CODEBUILD_BUILD_NUMBER
